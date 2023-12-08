@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+Billing Details D's
+        </title>
+        <style>
+
+          /*Use To Center The Logo Of D's*/
+            .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:200;
+ height:200;
+            }
+/*Use creat n design box of form*/
+            .box {
+  height: 30%;
+  width: 50%;
+  background: #f58800;
+} 
+.box {
+  float:left;
+  width: 50%; 
+  padding: 50px;
+  border: 3px solid rgb(0, 0, 0);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: medium;
+}
+/*Use creat n design boxs(2) of payment detail*/
+.boxs {
+  height: 30%;
+  width: 50%;
+  background: #f58800;
+} 
+.boxs {
+  float:right;
+  width: 35%; 
+  padding: 50px;
+  border: 3px solid rgb(0, 0, 0);
+
+}
+/*Use to design buttons */
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+</style>
+    </head>
+    <!--Main Body Starts-->
+    <body bgcolor="#cbf6ff">
+      <!--Header Starts-->
+        <header>
+            <div>
+              <!--Logo Of D's-->
+               <img src="/logo.png" height="120" alt="sorry" class="center">
+          </div>
+          </header>
+          <!--HR Tag Starts With Style-->
+          <hr style="height: 5px;
+          background:#000000;
+          margin: 20px 0;
+          box-shadow: 0px 0px 4px 2px rgb(2, 2, 2);">
+          <!--H1 (heading 1) with style-->
+          <h1 align="center" style="font-family:verdana;">Billing Details</h1>
+          <!--Main Form Starts With Link PHP-->
+          <form class="ds" action="data.php" method="post">
+            <!--Box Starts Of Form-->
+          <div class="box">
+
+            <!--Invoice No Code-->
+          <label for="quantity">Invoice No :</label>      
+  <input type="number" id="quantity" name="invoice"  min="1" max="10000">
+  <br><br>
+
+  <!--Date Code-->
+  <label for="birthday">Date</label>
+  <input type="date" id="birthday" name="date">
+  <br><br>
+
+  <!--Full Name Code-->
+  <label for="fname">Full Name :</label>
+  <input type="text" id="fname" name="fname" size="50"><br><br>
+
+  <!--Phone Number Code-->
+  <label> Phone No :
+    <input type="text" name="countrycode" value="+91" size="2">
+    <input type="text" name="phone" size="10">
+  </label><br><br>
+
+  <!--Gender Code-->
+  <label>Gender :
+  <input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="kids"> Kids
+</label><br><br>
+
+<!--Address Code-->
+<label for="fname">
+Address :
+  <textarea id="w3review" name="address" rows="4" cols="50"></textarea><br><br>
+</label>
+
+<!--Item Detail Code-->
+<label for="fname">Item Detail :
+  <textarea id="item" name="item" rows="4" cols="50"></textarea><br><br>
+  </label>
+
+  <!--Compney Name Code-->
+  <label for="company">Company:</label>
+  <select name="company" id="cars">
+    <option value="Amazone">Amazone</option>
+    <option value="Flipkart">Flipkart</option>
+    <option value="Suyash">Suyash</option>
+    <option value="Custom">Custom</option>
+  </select><br><br>
+
+  <!--Payment Method Code-->
+  <label for="payment">Payment Method :</label>
+  <select name="payment" id="cars">
+    <option value="Cash">Cash</option>
+    <option value="Online">Online</option>
+    <option value="Debit">Debit Card</option>
+    <option value="Credit">Credit Card</option>
+    <option value="Cheque">Cheque</option>
+  </select><br><br>
+
+  <!--Payment Complet or not -->
+  <label>Payment Complet :
+    <input type="radio" name="dn" value="Yes"> Yes
+  <input type="radio" name="dn" value="none"> No
+  <input type="radio" name="dn" value="Cancle"> Cancle
+  </label><br><br>
+
+  <!--Sign Img Code-->
+  <img src="/Sign_22-05-21_15-55-21-683.png" width="300" align="left">
+  <br><br><br><br><br><br><br><br>
+
+  <!--Submit Button Code-->
+  <button type="button" onclick="alert('Submision Done')" align="left" value="submit" class="button">Submit</button>
+  
+  <!--Print Button Code-->
+  <button type="button" align="left" value="print" class="button">Print</button>
+
+  <!--Reset Button-->
+  <input type="reset" value="reset" class="button" >
+
+          </div>
+          </form>
+
+          <!--Payment detail box starts-->
+          <div class="boxs">
+            <!--img of d's logo-->
+               <img src="/logo.png" height="100" alt="sorry" class="center">
+
+               <!--h1 for (heding of payment detail in detail box)-->
+          <h1 align="center">Payment Details</h1>
+
+          <!--hr-->
+          <hr color="black">
+
+          <!--Online Payment Details-->
+          <h3 align="center">Online Payment Details</h3>
+          <h4>Name : Dhruvin Patel</h4>
+          <h4>Number : 9265715426</h4>
+          <h4>UPI ID : pateldhruvin452@okicici</h4>
+          <img src="/qr.jpg" width="140px" class="center">
+          <h3 align="center">Bank Details</h3>
+          <h4>Name : Patel Dhruvinbhai Jatinbhai</h4>
+          <h4>IFSC CODE : BARB0BSEVN</h4>
+          <h4>AC Number : 93270100008363</h4>
+          </div>
+
+          <!--footer starts-->
+          <footer>
+            <marquee behavior="scroll" direction="left" class="mrq" >
+              WE JUST TAKE YOUR DETAILS FOR ANY PROBLEM COUSE IN FEATUTE AND ITS IS SAFE WE DONT SHARE ANY OF YOUR DETAILS WITH ANY ONE .copywrite by D's ,2022-2023.
+            </marquee>
+          </footer>
+    </body>
+</html>
